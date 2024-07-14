@@ -37,6 +37,7 @@ export class RefreshTokenIdsStorage
     if (storedId !== tokenId) {
       throw new InvalidatedRefreshTokenError();
     }
+
     return storedId === tokenId;
   }
 
